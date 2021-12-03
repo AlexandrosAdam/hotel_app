@@ -1,0 +1,457 @@
+/* ------------------ GLOBAL ELEMENTS ------------------ */
+html {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow: auto;
+    height: auto;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: auto;
+    overflow: auto;
+ }
+body > header ul li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+img {
+    width: 200px;
+    height: 140px; 
+}
+
+/* ------------------ HEADER ------------------ */
+header .header-logo {
+    font-weight: 400;
+    font-size: x-large;
+    
+}
+
+
+.container-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999; 
+    display: flex;
+    align-items: center;
+}
+ 
+
+li {
+    margin-right: 25px;
+}
+
+.home-link {
+    font-size: 20px;
+}
+
+.home-link:hover{
+    color: #e29910;
+}
+.profile-link {
+    font-size: 20px;
+}
+.profile-link:hover {
+    color: #e29910;
+}
+.logout-link {
+    font-size: 20px;
+}
+.logout-link:hover {
+    color: #e29910;
+}
+.login-link {
+    border-radius: 7px;
+    padding: 7px;
+    color: #333;
+    background: #fff;
+    border: 1px solid black;
+}
+.login-link:hover{
+    background-color: #e29910;
+}
+
+.register-link {
+    background: #46423c;
+    color: #fff;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.register-link:hover {
+    background-color: #e29910;
+}
+
+.menu-bar{
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+.header-logo{
+    padding-left: 10%;
+    font-weight: 400;
+}
+
+header ul {
+    list-style: none;
+}
+.fade-rule {
+    height: 2px;
+    background-color: #E6E6E6;
+    width: 100%;
+    margin-top: 4%;
+    bottom: 0;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, #808080), color-stop(0.98, white) );
+}
+
+
+
+/* ------------------ SCROLLBAR ------------------ */
+.container::-webkit-scrollbar {
+    width: 13px;
+}
+.container::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+.container::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, #d0368a 0%, #e4a51e 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+ /* ------------------ Scroll to top button ------------------ */
+
+ .scroll-top {
+    position: fixed;
+    z-index: 99;
+    outline: none;
+    background-color: rgb(236, 112, 10);
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 81%;
+    bottom: 20%;
+    font-size: 20px;
+}
+.scroll-top:hover {
+    background-color: rgb(121, 78, 44);
+}
+/* ------------------ MAIN BODY ------------------ */
+ .container {
+    margin-top: 2%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 750px;
+    align-items: baseline;
+    overflow-y: auto;
+}
+
+
+.box {
+    box-sizing: border-box;
+}
+aside.hotel-search {
+    box-sizing: border-box;
+    width: 30%;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 1);
+    padding: 27px;
+}
+        /* ------------------ FORM ------------------ */
+        form.form-search {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form .select-btn {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            padding: 16px;
+            text-align: center;
+            margin-bottom: 10%;
+            background-color: #efebeb;
+            cursor: pointer;
+        }
+        option {
+            background: #fff;
+        }
+        .select-btn:hover{
+            background: #d8910f;
+        }
+        .form-title{
+            color: #ff5500;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+        .submit-btn {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            width: 100%;
+            color: #fff;
+            background: #ff5500;
+            padding: 3%;
+            cursor: pointer;
+
+        }
+        .submit-btn:hover {
+            background: #852f05;
+        }
+        /*---------------- Price Slider ----------------*/
+        .euro-element {
+            margin-left: -42%;
+        }
+        .box-price {
+            margin-bottom: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box-value, input[type=number] {
+            text-align: center;
+            background-color: #efebeb;
+        }
+        
+        .price-slider{
+            position: relative;
+            width: 100%;
+            height: 100px;
+            margin-top: -9%;
+        }
+        input[type="range"]{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 100%;
+            outline: none;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            background-color: transparent;
+            pointer-events: none;
+        }
+        .slider-track{
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 6px;
+            border-radius: 5px;
+        
+            background: #404040;
+        }
+        input[type="range"]::-webkit-slider-runnable-track{
+            -webkit-appearance: none;
+            height: 5px;
+        }
+        input[type="range"]::-moz-range-track{
+            -moz-appearance: none;
+            height: 5px;
+        }
+        input[type="range"]::-ms-track{
+            appearance: none;
+            height: 5px;
+        }
+        input[type="range"]::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            height: 15px;
+            width: 15px;
+            background-color: #ee8b5a;
+            cursor: pointer;
+            margin-top: -9px;
+            pointer-events: auto;
+            border-radius: 50%;
+        }
+        input[type="range"]::-moz-range-thumb{
+            -webkit-appearance: none;
+            height: 15px;
+            width: 15px;
+        }
+        .label-price {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -20%;
+        }
+        
+
+
+        /*---------------- Date Picker ----------------*/
+
+        .dates-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        .datepicker {
+            width: 85%;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 5%;
+            font-size: 18px;
+            padding: 16px;
+        }
+        .datepicker:hover {
+            background: #d8910f;
+        }
+        
+
+
+section.hotel-list {
+    margin-left: 3%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+    .city-area-name {
+        margin-top: -2%;
+        color: #747171;
+    }
+    .city-area-name:hover {
+        animation-name: movetext;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    article.hotel {
+        display: flex;
+    }
+    article.hotel p {
+        color: #333;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Roboto",sans-serif;
+        font-weight: 300;
+    }
+    .hotel-img {
+        margin-top: 4%;
+        margin-right: 9%;
+    }
+
+    .page-title {
+        background: #ff5500;
+        border-radius: 4px;
+        color: #fff;
+        padding: 1px;
+        margin-bottom: 25px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
+
+    article.hotel .hotel-info {
+        border-left: 3px solid #f50;
+        margin: 0 0 0 -7%;
+        padding: 0 0 0 20px;
+    }
+    section.hotel-list .more-info {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    section.hotel-list .group-more-info {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        background: #dfdede;
+        
+    } 
+    
+    .more-info .per-night-info {
+        background: #787878;
+        color: #fff;
+        padding: 0 5px 0 5px;
+    }  
+
+        section.hotel-list {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 25px;
+        }
+        /* Link to page room */
+        .room-btn {
+            margin-left: 64%;
+        }
+        .link-to-page {
+            background-color: #ff5500;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            border: solid black 1px;
+        }
+        .link-to-page:hover {
+            background-color: #9e4d24;
+        }
+        main.hotel-info button a {
+            color: #fff;
+        }
+        main.hotel-info button:hover {
+            background: #663a25;
+        }
+
+        .no-rooms{
+            display: flex;
+            justify-content: center;
+            color: red;
+            font-size: 30px;
+        }
+
+
+/* ------------------  PRELOADER  ------------------ */
+    @keyframes movetext {
+        from {
+            margin-left: 0;
+        }
+        to {
+            margin-left: 40px;
+        }
+    }
+/* ------------------  PRELOADER  ------------------ */
+.preloader {
+    background: #000  url(/hotel_app/public/assets/images/loader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* ------------------  FOOTER  ------------------ */
+
+body > footer {
+    background-color: #d2cece;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #808080;
+}

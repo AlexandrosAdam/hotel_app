@@ -1,0 +1,425 @@
+html {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background: #fff;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   overflow: auto;
+   height: auto;
+}
+body {
+   margin: 0;
+   padding: 0;
+   background: #fff;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   height: auto;
+}
+
+body > header ul li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    font-weight: 300;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+img {
+    width: 90%;
+    height: 100%;
+}
+
+/* ------------------ HEADER ------------------ */
+
+header .header-logo {
+    font-weight: 400;
+    font-size: x-large;
+    
+}
+
+
+.container-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+}
+    
+
+.navigation-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+li {
+    margin-right: 25px;
+}
+
+.home-link {
+    font-size: 20px;
+}
+
+.home-link:hover{
+    color: #e29910;
+}
+.profile-link {
+    font-size: 20px;
+}
+.profile-link:hover {
+    color: #e29910;
+}
+.logout-link {
+    font-size: 20px;
+}
+.logout-link:hover {
+    color: #e29910;
+}
+.login-link {
+    border-radius: 7px;
+    padding: 7px;
+    color: #333;
+    background: #fff;
+    border: 1px solid black;
+}
+.login-link:hover{
+    background-color: #e29910;
+}
+
+.register-link {
+    background: #46423c;
+    color: #fff;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.register-link:hover {
+    background-color: #e29910;
+}
+
+.menu-bar{
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+.header-logo{
+    padding-left: 10%;
+    font-weight: 400;
+}
+
+header ul {
+    list-style: none;
+}
+.fade-rule {
+    height: 2px;
+    background-color: #E6E6E6;
+    width: 100%;
+    margin-top: 4%;
+    bottom: 0;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, white), color-stop(0.5, #808080), color-stop(0.98, white) );
+}
+
+/* ------------------ MAIN BODY ------------------ */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 750px;
+    margin-top: 2%;
+    overflow-y: auto;
+}
+    /* ------------------ Scroll to top button ------------------ */
+
+        .scroll-top {
+            position: fixed;
+            z-index: 99;
+            outline: none;
+            background-color: rgb(236, 112, 10);
+            color: #fff;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 1px solid black;
+            margin-left: 53%;
+            bottom: 20%;
+            font-size: 20px;
+
+        }
+        .scroll-top:hover {
+            background-color: rgb(121, 78, 44);
+        }
+    /* ------------------ Scrollbar Styling ------------------ */
+    .main-container::-webkit-scrollbar {
+        width: 13px;
+    }
+    .main-container::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        border-radius: 100px;
+    }
+    .main-container::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background-image: linear-gradient(180deg, #d0368a 0%, #e4a51e 99%);
+        box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    }
+
+.head-info{
+    display: flex;
+    align-items: center;
+    background: #ff5500;
+    width: 80%;
+    color: #fff;
+}
+
+.hotel-name-reviews {
+    display: flex;
+}
+.title-reviews {
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+    .fa-star{
+        margin-left: 3%;
+    }
+    .checked {
+        color: orange;
+    }
+    
+.name-text {
+    margin-left: 10px;
+}
+.star {
+    font-size: 20px;
+    margin-left: 65%;
+    cursor: pointer;
+    border: none;
+    background-color: #ff5500;
+    color: #fff;
+    margin-top: 3px;
+}
+    .selected {
+        color: red;
+    }
+.money-text {
+    margin-left: auto;
+    margin-right: 1.5%;
+}
+
+.hotel-img {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+} 
+
+.more-hotel-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+    background: #ff5500;
+    width: 80%;
+    padding-top: 5px;
+    color: #fff;
+}
+
+            .num-of-guests {
+                border-right: dotted;
+                padding: 0 5% 0 0;
+            }
+            .fa-user {
+                margin-left: 42%;
+            }
+            .room-type {
+                border-right: dotted;
+                padding: 0 5% 0 0;
+            }
+            .fa-bed{
+                margin-left: 42%;
+            }
+            .hotel-parking {
+                border-right: dotted;
+                padding: 0 5% 0 0;
+            }
+            .fa-parking {
+                margin-left: 17%;
+            }
+            .pet-friendly {
+                border-left: dotted;
+                padding: 0 0 0 2%;
+            }
+            .fa-dog{
+                margin-left: 27%;
+            }
+.hotel-description {
+    margin-top: 2%;
+    width: 78%;
+    border-left: #ff5500 solid 3px;
+    padding: 0 0 0 2%;
+}
+
+.already-book-btn {
+    margin-left: 80%;
+    cursor: pointer;
+    padding: 1%;
+    background: darkred;
+    color: #fff;
+    border-radius: 6px;
+}
+.book-btn{
+    padding: 2%;
+    border-radius: 6px;
+    background: rgb(236, 112, 10);
+    cursor: pointer;
+    margin-left: 80%;
+    color: #fff;
+}
+.book-btn:hover {
+    background: rgb(153, 86, 31);
+}
+
+/* ------------------ Hotel Rate - Review ------------------ */
+
+hr {
+    border:none;
+    border-top:3px dotted rgb(31, 29, 29);
+    color:#fff;
+    background-color:#fff;
+    width:100%;
+    margin-bottom: 5%;
+}
+.hotel-review {
+    margin-top: 2%;
+    width: 78%;
+    border-left: #f39100 solid 3px;
+    padding: 0 0 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+        fieldset.star-widget {
+            border: 0;
+            margin-bottom: -20%;
+            margin-left: -17%;
+        }
+        .star-widget input{
+            display: none;
+
+        }
+        .star-widget label {
+            color: #444;
+            font-size: 20px;
+            padding: 5px;
+            float: right;
+            margin-right: 2%;
+            transition: all 0.2s ease;
+        }
+        .star-widget input:not(:checked) ~ label:hover,
+        .star-widget input:not(:checked) ~ label:hover ~ label {
+            color: orange;
+        }
+        .star-widget input:checked ~ label {
+            color: orange;
+        }
+        .comment-area {
+            width: 317%;
+            height: 50px;
+            resize: none;
+            margin-bottom: 5%;
+            overflow-y: auto;
+            font-size: 16px;
+        }
+        .comment-area::placeholder {
+            font-size: x-large;
+        }
+        .review-btn {
+            padding: 5%;
+            border-radius: 6px;
+            background: rgb(236, 112, 10);
+            cursor: pointer;
+            color: #fff;
+            margin-bottom: 10%;
+            width: 50%;
+
+        }
+        .review-btn:hover {
+            background: rgb(153, 86, 31);
+        }
+
+/* ------------------  Hotel Location Map  ------------------ */
+
+.hotel-location {
+    margin-top: 3%;
+}
+#map {
+    width: 750px;
+    height: 500px;
+  }
+.marker {
+    background-image: url(/hotel_app/public/assets/images/marker.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+/* ------------------  PRELOADER  ------------------ */
+.preloader {
+    background: #000  url(/hotel_app/public/assets/images/loader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+/* ------------------  Media quries  ------------------ */
+@media (max-width: 1322px) {
+    .fade-rule {
+        height: 0;
+        background-color: none;
+    }
+    .menu-bar {
+        margin-right: 30%;
+    }
+    .menu-bar {
+        margin-top: 7%;
+    }
+    .already-book-btn {
+        margin-left: 0;
+    }
+    .book-btn {
+        margin-left: 0;
+    }
+}
+
+/* ------------------  FOOTER  ------------------ */
+
+body > footer {
+    background-color: #dfdcdc;;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    border-top: 3px solid #808080;
+}
