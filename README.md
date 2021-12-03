@@ -40,5 +40,5 @@ The application is seperated into six web pages the index, login, register, list
 
 - profile file: here you can see your favorite rooms, the rooms that you have reviewed and the rooms that you have booked.
 
-As for the web security part the app is protected from cross site request forgery and cross site scripting attacks
+As for the web security part the app is protected from cross site request forgery and cross site scripting attacks.
 To book a room you must be logged in the application, otherwise you will be directed to index page. 
