@@ -11,7 +11,7 @@ A simple web application for searching and booking rooms
 
 ## General info
 
-The current project aimed at developing a fully functional application about booking a hotel room. It includes many modern technologies and it is also secured to protect the user and the application from attacks. In the app you you can create a user, search for available hotel rooms and make a booking.
+The current project aimed at developing a fully functional application about booking a hotel room. It includes many modern technologies and it is also secured to protect the user and the application from attacks. In the app you can create a user, search for available hotel rooms and make a booking.
 
 ## Technologies
 
